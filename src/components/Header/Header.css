@@ -1,0 +1,29 @@
+header {
+  max-width: 920px;
+  height: 80px;
+  margin: auto;
+}
+nav {
+  display: flex;
+}
+.header-list {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+}
+.btn-sign {
+  background-color: var(--main);
+  color: white;
+  border: none;
+}
+.btn-sign:hover {
+  background-color: var(--main);
+  color: white;
+  box-shadow: 0 0 10px var(--main);
+}
+.accent-text {
+  color: var(--main);
+}
+.accent-text:hover {
+  color: var(--main);
+}

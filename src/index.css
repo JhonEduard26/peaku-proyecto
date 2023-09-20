@@ -1,0 +1,22 @@
+:root {
+  --main: #fa7436;
+  --bg: #fefcfb;
+  --bg-alt: #f7f8fc;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  font-family: sans-serif;
+  background-color: var(--bg);
+}
+ul {
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.accent-text {
+  color: var(--main);
+}
