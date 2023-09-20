@@ -1,0 +1,37 @@
+#testimony {
+  left: 0;
+  right: 0;
+  bottom: 360px;
+  margin: 0 auto;
+  padding: 6rem 0;
+  background-color: var(--bg-alt);
+}
+#testimony > div {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.avatar-img {
+  top: -32px;
+  left: -32px;
+  width: 48px;
+  height: auto;
+  background-color: var(--main);
+}
+.card {
+  width: 80%;
+  border: 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+.card-main {
+  position: relative;
+  z-index: 10;
+}
+.card-behind {
+  z-index: 1;
+  top: 72px;
+  left: 40px;
+  opacity: 0.5;
+}
+.btn:hover {
+  box-shadow: 0 0 8px 0 var(--main);
+}

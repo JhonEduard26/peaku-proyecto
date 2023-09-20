@@ -1,0 +1,18 @@
+#blog {
+  max-width: 920px;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  padding-bottom: 6rem;
+  background-color: var(--bg);
+}
+.card {
+  border: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.card-body p {
+  font-size: 0.85rem;
+}
+
+.font-small {
+  font-size: 0.85rem;
+}

@@ -1,0 +1,24 @@
+#tour {
+  max-width: 920px;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  background-color: var(--bg);
+}
+.tour-paragraph {
+  margin-bottom: 4rem;
+  text-wrap: balance;
+}
+.card {
+  border: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.card-body p {
+  font-size: 0.85rem;
+}
+.font-small {
+  font-size: 0.85rem;
+}
+.destination-final-price {
+  background-color: #ffe7db;
+  color: var(--main);
+}
