@@ -1,0 +1,76 @@
+#home {
+  max-width: 920px;
+  margin: auto;
+}
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.home-parragraph {
+  margin-bottom: 3rem;
+}
+.home-img--bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 360px;
+  border-radius: 0 0 50% 50%;
+  background: linear-gradient(to bottom, transparent 50%, var(--main) 0);
+}
+.btn-discover {
+  background-color: white;
+  color: var(--main);
+  border: 1px solid var(--main);
+}
+.btn-discover:hover {
+  box-shadow: 0 0 8px 0 var(--main);
+}
+.home-badge {
+  width: 100%;
+  max-width: 152px;
+  background-color: white;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  font-size: 0.65rem;
+}
+.home-badge h6 {
+  margin: 0;
+  font-size: 0.75rem;
+}
+.badge-star {
+  bottom: 60px;
+  left: 40px;
+}
+.badge-maps {
+  top: 46%;
+  right: 36px;
+}
+.badge-award {
+  width: min-content;
+  top: 80px;
+  left: 12px;
+}
+.home-info {
+  width: 70%;
+  margin-top: 4rem;
+  padding: 24px 12px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  font-size: 0.75rem;
+}
+.home-info p {
+  margin: 0;
+}
+.btn-sign {
+  background-color: var(--main);
+  color: white;
+  border: none;
+}
+.btn-sign:hover {
+  background-color: var(--main);
+  color: white;
+  box-shadow: 0 0 10px var(--main);
+}
