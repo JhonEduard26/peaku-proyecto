@@ -1,0 +1,16 @@
+#about {
+  margin: 4rem auto;
+  padding: 4rem 0;
+  background-color: var(--bg-alt);
+}
+.about-paragraph {
+  margin-bottom: 4rem;
+  text-wrap: balance;
+}
+.card {
+  border: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.card-body p {
+  font-size: 0.85rem;
+}
