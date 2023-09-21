@@ -2,6 +2,7 @@ import group1 from '../../assets/group-1.png'
 import group2 from '../../assets/group-2.png'
 import group3 from '../../assets/group-3.png'
 import './About.css'
+import { CardAbout } from './CardAbout'
 
 export const About = () => {
   return (
@@ -16,29 +17,21 @@ export const About = () => {
         </div>
       </div>
       <div className="row gap-4 justify-content-center">
-        <div className="card" style={{width: "18rem"}}>
-          <img width="36" height="36" src={group3} alt="card image" style={{margin: "16px 0 0 16px"}} />
-          <div className="card-body">
-            <h5 className="card-title fw-semibold">Sign up</h5>
-            <p className="card-text text-muted">Complete all the work associated with planning and processing</p>
-          </div>
-        </div>
-
-        <div className="card" style={{width: "18rem"}}>
-          <img width="36" height="36" src={group1} alt="card image" style={{margin: "16px 0 0 16px"}} />
-          <div className="card-body">
-            <h5 className="card-title fw-semibold">Worth of Money</h5>
-            <p className="card-text text-muted">After succesfully access then book from exclusive deals &amp; pricing</p>
-          </div>
-        </div>
-
-        <div className="card" style={{width: "18rem"}}>
-          <img width="36" height="36" src={group2} alt="card image" style={{margin: "16px 0 0 16px"}} />
-          <div className="card-body">
-            <h5 className="card-title fw-semibold">Exciting travel</h5>
-            <p className="card-text text-muted">Start and explore a wide range of exciting travel experience</p>
-          </div>
-        </div>
+        <CardAbout
+          imgSrc={group3}
+          title="Sign up"
+          description="Complete all the work associated with planning and processing"
+        />
+        <CardAbout
+          imgSrc={group1}
+          title="Worth of Money"
+          description="After succesfully access then book from exclusive deals &amp; pricing"
+        />
+        <CardAbout
+          imgSrc={group2}
+          title="Exciting travel"
+          description="Start and explore a wide range of exciting travel experience"
+        />
       </div>
     </section>
   )

@@ -13,9 +13,9 @@ export const Home = () => {
             A team of experienced tourism professionals will provide you with the
             best advice and tips for your desire place.
           </p>
-          <button className="d-inline-flex py-2 px-4 rounded-2 fw-semibold btn-discover"
-          >Discover Now</button
-          >
+          <button className="d-inline-flex py-2 px-4 rounded-2 fw-semibold btn-discover">
+            Discover Now
+          </button>
         </div>
         <div className="col position-relative">
           <picture className="home-img--bg">
