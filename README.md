@@ -3,7 +3,7 @@
 Landing page Trabook.
 
 Sitio en vivo:
-[Trabook]()
+[Trabook](https://peaku-proyecto-final.netlify.app/)
 
 <div style="text-align:center;">
   <img src="./src/assets/tourist-with-thumb-up.png" alt="tourist" style="max-width: 50%; height: auto;">
@@ -31,6 +31,10 @@ Sitio en vivo:
 ### Arquitectura
 
 * Patrón MVC
+
+## Despliegue
+
+* Netlify: https://peaku-proyecto-final.netlify.app/
 
 ## Autores
 

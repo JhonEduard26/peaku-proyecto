@@ -2,7 +2,7 @@ import { CardDest } from './CardDest'
 import { useState, useEffect } from 'react'
 import './Destination.css'
 
-const URL = 'https://pauci.serveo.net/site'
+const URL = 'https://vulgus.serveo.net/site'
 
 export const Destination = () => {
 
