@@ -1,14 +1,22 @@
+import { useState, useEffect } from 'react'
 import { CardBlog } from './CardBlog'
-import tour1 from '../../assets/image-4.png'
 import './Blog.css'
 
-const blogData = Array(4).fill({
-  title: "The Amazing Difference a Year of Travelling.",
-  date: "July 27, 2021",
-  img: tour1
-})
+const URL = 'https://pauci.serveo.net/post'
 
 export const Blog = () => {
+
+  const [posts, setPosts] = useState([])
+
+  useEffect(() => {
+    fetch(URL)
+      .then(res => res.json())
+      .then(data => {
+        setPosts(data.data)
+      })
+      .catch(err => console.log(err))
+  }, [])
+
   return (
     <section id="blog">
       <div className="row text-center w-50 mx-auto">
@@ -18,38 +26,17 @@ export const Blog = () => {
           </h2>
         </div>
       </div>
-      <div className="row gap-4 justify-content-center">
+      <div className="row gap-4 justify-content-center card-blogs">
         {
-          blogData.map((item, index) => (
+          posts.map(post => (
             <CardBlog
-              key={index}
-              title={item.title}
-              date={item.date}
-              img={item.img}
+              key={post.id}
+              title={post.comentario}
+              date={post.Site.createdAt}
+              img={post.Site.urlImage}
             />
-
           ))
         }
-        {/* <CardBlog
-          title="The Amazing Difference a Year of Travelling."
-          date="July 27, 2021"
-          img={tour1}
-        />
-        <CardBlog
-          title="Travel far enough, you meet yourself."
-          date="July 27, 2021"
-          img={tour2}
-        />
-        <CardBlog
-          title="How to Save Money While Visiting Africa."
-          date="July 27, 2021"
-          img={tour3}
-        />
-        <CardBlog
-          title="Reflections on 5 Months of Travel: Time to Hang."
-          date="July 27, 2021"
-          img={tour1}
-        /> */}
       </div>
     </section>
   )

@@ -1,14 +1,32 @@
 import tour1 from '../../assets/image-4.png'
+import tour2 from '../../assets/image-1.png'
+import tour3 from '../../assets/image-3.png'
 import { CardTour } from './CardTour'
 import './Tour.css'
 
-const cardData = Array(3).fill({
-  img: tour1,
-  city: "Rome, Italy",
-  days: "7 Days Trip",
-  rating: 4.8,
-  priceTicket: 5.42,
-})
+const cardData = [
+  {
+    img: tour1,
+    city: "Rome, Italy",
+    days: "7 Days Trip",
+    rating: 4.8,
+    priceTicket: 5.42,
+  },
+  {
+    img: tour2,
+    city: "London, UK",
+    days: "7 Days Trip",
+    rating: 4.7,
+    priceTicket: 2.42,
+  },
+  {
+    img: tour3,
+    city: "Osaka, Japan",
+    days: "10 Days Trip",
+    rating: 4.8,
+    priceTicket: 5.42,
+  },
+]
 
 export const Tour = () => {
   return (

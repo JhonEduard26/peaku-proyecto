@@ -1,6 +1,6 @@
-export const CardDest = ({ img, city, country, rating, oldPrice, newPrice }) => {
+export const CardDest = ({ img, city = '', country = '', rating, oldPrice, newPrice }) => {
   return (
-    <div className="col card p-0">
+    <div className="card p-0">
       <img className="card-img-top" src={img} alt="card image" />
       <div className="card-body">
         <div className="d-flex justify-content-between">
