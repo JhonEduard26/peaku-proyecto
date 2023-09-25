@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { CardBlog } from './CardBlog'
 import './Blog.css'
 
-const URL = 'https://vulgus.serveo.net/post'
+const URL = 'https://nemo.serveo.net/post'
 
 export const Blog = () => {
 
